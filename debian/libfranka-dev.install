@@ -1,0 +1,3 @@
+usr/include/franka
+usr/lib/*/libfranka.so
+usr/lib/*/cmake/Franka

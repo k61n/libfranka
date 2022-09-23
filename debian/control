@@ -1,0 +1,24 @@
+Source: libfranka
+Priority: optional
+Maintainer: Konstantin Kholostov <k.kholostov@fz-juelich.de>
+Build-Depends: debhelper (>=13~),
+ libpoco-dev,
+ libeigen3-dev,
+ cmake
+Standards-Version: 4.5.1
+Section: libs
+
+Package: libfranka
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: C++ library for Franka Emika research robots
+ With this library, you can control research versions of Franka Emika robots.
+
+Package: libfranka-dev
+Section: libdevel
+Architecture: any
+Depends: libfranka (= ${binary:Version}), ${misc:Depends}
+Description: C++ library for Franka Emika research robots
+ With this library, you can control research versions of Franka Emika robots.
+ .
+ This package contains the development files.
