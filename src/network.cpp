@@ -5,6 +5,11 @@
 #include <memory>
 #include <sstream>
 
+#if !defined(TCP_KEEPIDLE) && defined(TCP_KEEPALIVE)
+#define TCP_KEEPIDLE TCP_KEEPALIVE
+#endif
+
+
 using namespace std::string_literals;  // NOLINT(google-build-using-namespace)
 
 namespace franka {
