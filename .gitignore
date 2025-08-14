@@ -5,3 +5,5 @@ cmake-build-*/
 install*/
 *.user
 .cache
+.idea/
+.DS_Store
