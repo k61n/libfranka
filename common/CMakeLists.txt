@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.16)
 
 add_library(libfranka-common INTERFACE)
 set_target_properties(libfranka-common PROPERTIES
